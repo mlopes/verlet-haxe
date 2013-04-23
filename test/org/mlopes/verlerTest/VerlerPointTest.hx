@@ -145,17 +145,13 @@ class VerlerPointTest
 		point.update();
 		Assert.areSame(y, point.getPreviousY());
 	}
-	// @Test
-	// public function itAppliesThePhysicsFormulaWhenUpdating():Void
-	// {
-	// 	var x:Int = point.getX();
-	// 	var y:Int = point.getY();
-	// 	var previousX:Int = point.getPreviousX();
-	// 	var previousY:Int = point.getPreviousY();
 
-	// 	point.update();
+	@Test
+	public function itFallsDownIfFalldownRateIsSet():Void
+	{
+		point.setFalldownRate(1);
+		point.update();
 
-	// 	Assert.areSame((x + x) - previousX, point.getX());
-	// 	Assert.areSame((y + y) - previousY, point.getY());
-	// }
+		Assert.areSame(17, point.getY());
+	}
 }

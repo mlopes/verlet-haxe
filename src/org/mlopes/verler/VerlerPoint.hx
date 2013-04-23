@@ -6,6 +6,7 @@ class VerlerPoint extends Point
 {
     private var previousX:Float;
     private var previousY:Float;
+    private var falldownRate:Float = 0;
 
     public function new(newX:Float, newY:Float)
     {
@@ -43,6 +44,11 @@ class VerlerPoint extends Point
         return previousY;
     }
 
+    public function setFalldownRate(rate:Float):Void
+    {
+        falldownRate = rate;
+    }
+
     public function setPosition(newX:Float, newY:Float):Void
     {
         x = previousX = newX;
@@ -51,6 +57,8 @@ class VerlerPoint extends Point
 
     public function update():Void
     {
+        updateYFalldown();
+
         var originalX:Float = x;
         var originalY:Float = y;
 
@@ -59,5 +67,10 @@ class VerlerPoint extends Point
 
         previousX = originalX;
         previousY = originalY;
+    }
+
+    private function updateYFalldown():Void
+    {
+        y += falldownRate;
     }
 }
