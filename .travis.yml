@@ -17,4 +17,4 @@ before_script:
 
 # Run the test!
 script:
-    - haxelib run munit test -neko
+    - haxelib run munit test -result-exit-code -neko
