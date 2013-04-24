@@ -13,6 +13,7 @@ before_script:
     - mkdir ~/haxelib                                    # create a folder for installing haxelib
     - haxelib setup ~/haxelib
     - haxelib install munit
+    - haxelib install nme
 
 # Run the test!
 script:
