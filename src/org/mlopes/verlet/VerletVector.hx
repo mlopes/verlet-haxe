@@ -1,12 +1,12 @@
-package org.mlopes.verler;
+package org.mlopes.verlet;
 
-import org.mlopes.verler.VerlerPoint;
+import org.mlopes.verlet.VerletPoint;
 
 class VerletVector
 {
     private var length:Float;
 
-    public function new(pointA:VerlerPoint, pointB:VerlerPoint)
+    public function new(pointA:VerletPoint, pointB:VerletPoint)
     {
         var dX:Float = pointA.getX() - pointB.getX();
         var dY:Float = pointA.getY() - pointB.getY();

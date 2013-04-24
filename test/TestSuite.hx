@@ -1,7 +1,7 @@
 import massive.munit.TestSuite;
 
-import org.mlopes.verlerTest.VerletVectorTest;
 import org.mlopes.verletTest.VerletPointTest;
+import org.mlopes.verletTest.VerletVectorTest;
 
 /**
  * Auto generated Test Suite for MassiveUnit.
@@ -15,7 +15,7 @@ class TestSuite extends massive.munit.TestSuite
 	{
 		super();
 
-		add(org.mlopes.verlerTest.VerletVectorTest);
 		add(org.mlopes.verletTest.VerletPointTest);
+		add(org.mlopes.verletTest.VerletVectorTest);
 	}
 }

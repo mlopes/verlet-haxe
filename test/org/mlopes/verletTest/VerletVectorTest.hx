@@ -1,12 +1,12 @@
-package org.mlopes.verlerTest;
+package org.mlopes.verletTest;
 
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
 
 import nme.geom.Point;
-import org.mlopes.verler.VerletVector;
-import org.mlopes.verler.VerlerPoint;
+import org.mlopes.verlet.VerletVector;
+import org.mlopes.verlet.VerletPoint;
 
 class VerletVectorTest
 {
@@ -40,8 +40,8 @@ class VerletVectorTest
 	@Test
 	public function itSetsVectorLengthWhenItIsCreated():Void
 	{
-		var pointA:VerlerPoint = new VerlerPoint(10, 10);
-		var pointB:VerlerPoint = new VerlerPoint(20, 20);
+		var pointA:VerletPoint = new VerletPoint(10, 10);
+		var pointB:VerletPoint = new VerletPoint(20, 20);
 
 		var vector:VerletVector = new VerletVector(
 			pointA,
