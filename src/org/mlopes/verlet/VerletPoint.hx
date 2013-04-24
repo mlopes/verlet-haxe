@@ -1,8 +1,8 @@
-package org.mlopes.verler;
+package org.mlopes.verlet;
 
 import nme.geom.Point;
 
-class VerlerPoint extends Point
+class VerletPoint extends Point
 {
     private var previousX:Float;
     private var previousY:Float;
