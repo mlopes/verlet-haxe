@@ -1,14 +1,14 @@
-package org.mlopes.verlerTest;
+package org.mlopes.verletTest;
 
 import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
 
-import org.mlopes.verler.VerlerPoint;
+import org.mlopes.verlet.VerletPoint;
 
-class VerlerPointTest
+class VerletPointTest
 {
-	private var point:VerlerPoint;
+	private var point:VerletPoint;
 
 
 	public function new()
@@ -28,7 +28,7 @@ class VerlerPointTest
 	@Before
 	public function setup():Void
 	{
-		point = new VerlerPoint(10, 15);
+		point = new VerletPoint(10, 15);
 	}
 
 	@After
