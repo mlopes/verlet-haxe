@@ -49,4 +49,24 @@ class VerletVectorTest
 
 		Assert.areSame(Point.distance(pointA, pointB) , vector.getLength());
 	}
+
+	@Test
+	public function itUpdatesXandYOnContrain():Void
+	{
+		var pointA:VerletPoint = new VerletPoint(10, 15);
+		var pointB:VerletPoint = new VerletPoint(20, 25);
+
+		var vector:VerletVector = new VerletVector(
+			pointA,
+			pointB);
+
+		vector.getPointA().setPosition(15, 20);
+
+		vector.constrain();
+
+		Assert.areSame(vector.getPointA().getX(), 12.5);
+		Assert.areSame(vector.getPointB().getX(), 22.5);
+		Assert.areSame(vector.getPointA().getY(), 17.5);
+		Assert.areSame(vector.getPointB().getY(), 27.5);
+	}
 }
