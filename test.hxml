@@ -3,6 +3,7 @@
 -lib munit
 -lib hamcrest
 -lib openfl
+-lib lime
 -cp src
 
 -cp test
@@ -16,6 +17,7 @@
 -lib munit
 -lib hamcrest
 -lib openfl
+-lib lime
 -cp src
 
 -cp test
@@ -28,6 +30,7 @@
 -lib munit
 -lib hamcrest
 -lib openfl
+-lib lime
 -cp src
 
 -cp test
@@ -40,6 +43,7 @@
 -lib munit
 -lib hamcrest
 -lib openfl
+-lib lime
 -cp src
 
 -cp test
