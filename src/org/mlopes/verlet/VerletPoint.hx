@@ -1,6 +1,6 @@
 package org.mlopes.verlet;
 
-import nme.geom.Point;
+import openfl.geom.Point;
 
 class VerletPoint extends Point
 {

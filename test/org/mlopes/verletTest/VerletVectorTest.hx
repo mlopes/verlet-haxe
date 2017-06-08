@@ -4,7 +4,7 @@ import massive.munit.util.Timer;
 import massive.munit.Assert;
 import massive.munit.async.AsyncFactory;
 
-import nme.geom.Point;
+import openfl.geom.Point;
 import org.mlopes.verlet.VerletVector;
 import org.mlopes.verlet.VerletPoint;
 

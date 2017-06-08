@@ -1,6 +1,6 @@
 package org.mlopes.verlet;
 
-import nme.geom.Point;
+import openfl.geom.Point;
 import org.mlopes.verlet.VerletPoint;
 
 class VerletVector
